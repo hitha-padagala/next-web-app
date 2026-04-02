@@ -161,7 +161,7 @@ export default function Home() {
       </div>
 
       {/* Rainbow decoration at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-4 bg-linear-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-4 bg-linear-to-r from-red-400 via-green-400 to-purple-400"></div>
     </div>
   );
 }
