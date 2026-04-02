@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ops = ["+", "-", "×"];
 const randomQuestion = () => {
@@ -11,7 +11,11 @@ const randomQuestion = () => {
 };
 
 export default function MathsPage() {
-  const [{ num1, num2, op }, setQuestion] = useState(() => randomQuestion());
+  const [{ num1, num2, op }, setQuestion] = useState({ num1: 0, num2: 0, op: "+" });
+
+  useEffect(() => {
+    setQuestion(randomQuestion());
+  }, []);
   const [answer, setAnswer] = useState("");
   const [score, setScore] = useState(0);
   const [result, setResult] = useState("");
