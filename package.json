@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run checks && next dev",
-    "build": "next build",
-    "start": "next start",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,css,json,md}\" --log-level warn",
     "typecheck": "tsc --noEmit",
     "lint": "eslint",
-    "checks": "rimraf .next && npm i && concurrently --kill-others-on-fail \"npm run format\" \"npm run typecheck\" \"npm run lint\""
+    "checks": "rimraf .next && npm i && concurrently --kill-others-on-fail \"npm run format\" \"npm run typecheck\" \"npm run lint\"",
+    "dev": "npm run checks && next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "next": "16.2.1",
