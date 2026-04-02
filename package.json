@@ -5,7 +5,7 @@
   "scripts": {
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,css,json,md}\" --log-level warn",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint",
+    "lint": "eslint ./ --fix --cache --cache-location .next/cache/.eslintcache",
     "checks": "rimraf .next && npm i && concurrently --kill-others-on-fail \"npm run format\" \"npm run typecheck\" \"npm run lint\"",
     "dev": "npm run checks && next dev",
     "build": "next build",
