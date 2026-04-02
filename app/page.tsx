@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-b from-sky-300 via-purple-200 to-pink-200">
+    <div className="min-h-screen relative overflow-hidden bg-linear-to-b from-sky-300 via-purple-200 to-pink-200">
       {/* Floating clouds */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="animate-float-slow absolute top-10 left-10 text-6xl">
@@ -43,7 +43,7 @@ export default function Home() {
           {/* Fun header with bouncing emoji */}
           <div className="flex items-center justify-center gap-4 mb-4">
             <span className="text-5xl animate-bounce">🌈</span>
-            <h1 className="text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 drop-shadow-lg">
+            <h1 className="text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-purple-500 via-pink-500 to-yellow-500 drop-shadow-lg">
               Smart Kid
             </h1>
             <span
@@ -65,7 +65,7 @@ export default function Home() {
             href="/telugu"
             className="group relative transform transition-all duration-300 hover:-translate-y-3 hover:scale-105"
           >
-            <div className="bg-gradient-to-br from-pink-300 via-pink-400 to-rose-500 rounded-3xl p-8 text-center shadow-xl border-4 border-white/50 cursor-pointer overflow-hidden">
+            <div className="bg-linear-to-br from-pink-300 via-pink-400 to-rose-500 rounded-3xl p-8 text-center shadow-xl border-4 border-white/50 cursor-pointer overflow-hidden">
               {/* Sparkle effect on hover */}
               <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative z-10">
@@ -92,7 +92,7 @@ export default function Home() {
             href="/maths"
             className="group relative transform transition-all duration-300 hover:-translate-y-3 hover:scale-105"
           >
-            <div className="bg-gradient-to-br from-blue-300 via-blue-400 to-cyan-500 rounded-3xl p-8 text-center shadow-xl border-4 border-white/50 cursor-pointer overflow-hidden">
+            <div className="bg-linear-to-br from-blue-300 via-blue-400 to-cyan-500 rounded-3xl p-8 text-center shadow-xl border-4 border-white/50 cursor-pointer overflow-hidden">
               <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative z-10">
                 <div className="text-7xl mb-4 group-hover:animate-bounce">
@@ -118,7 +118,7 @@ export default function Home() {
             href="/english"
             className="group relative transform transition-all duration-300 hover:-translate-y-3 hover:scale-105"
           >
-            <div className="bg-gradient-to-br from-green-300 via-green-400 to-emerald-500 rounded-3xl p-8 text-center shadow-xl border-4 border-white/50 cursor-pointer overflow-hidden">
+            <div className="bg-linear-to-br from-green-300 via-green-400 to-emerald-500 rounded-3xl p-8 text-center shadow-xl border-4 border-white/50 cursor-pointer overflow-hidden">
               <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative z-10">
                 <div className="text-7xl mb-4 group-hover:animate-bounce">
@@ -161,7 +161,7 @@ export default function Home() {
       </div>
 
       {/* Rainbow decoration at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-4 bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-4 bg-linear-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400"></div>
     </div>
   );
 }
