@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 type Category = "addition" | "subtraction" | "multiplication" | "division";
 
@@ -229,7 +230,7 @@ export default function MathsPage() {
                   className={`p-5 rounded-2xl border-4 text-lg font-bold transition transform hover:scale-105 ${
                     category === key
                       ? `bg-gradient-to-br ${categoryConfig[key].color} text-white border-white shadow-lg`
-                      : "bg-white border-gray-200 hover:border-purple-300"
+                      : "bg-gray-100 border-gray-300 hover:border-purple-300 text-gray-800"
                   }`}
                 >
                   <div className="text-4xl mb-2">
@@ -380,6 +381,16 @@ export default function MathsPage() {
             )}
           </div>
         )}
+
+        {/* Back to Home */}
+        <div className="text-center mt-6">
+          <Link
+            href="/"
+            className="inline-block bg-gradient-to-r from-purple-400 to-pink-500 text-white px-8 py-4 rounded-2xl text-lg font-bold hover:from-purple-500 hover:to-pink-600 transition transform hover:scale-110 shadow-lg"
+          >
+            🏠 Back to Home
+          </Link>
+        </div>
       </div>
     </div>
   );

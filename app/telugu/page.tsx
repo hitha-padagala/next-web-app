@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -420,6 +420,30 @@ export default function TeluguPage() {
   const [fruitIndex, setFruitIndex] = useState(0);
   const [readingIndex, setReadingIndex] = useState(0);
   const [showTranslation, setShowTranslation] = useState(false);
+  const [voicesLoaded, setVoicesLoaded] = useState(false);
+
+  // Load voices when component mounts
+  useEffect(() => {
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      // Load voices
+      const loadVoices = () => {
+        const voices = window.speechSynthesis.getVoices();
+        if (voices.length > 0) {
+          setVoicesLoaded(true);
+        }
+      };
+
+      // Try to load voices immediately
+      loadVoices();
+
+      // Listen for voiceschanged event (voices may load asynchronously)
+      window.speechSynthesis.addEventListener("voiceschanged", loadVoices);
+
+      return () => {
+        window.speechSynthesis.removeEventListener("voiceschanged", loadVoices);
+      };
+    }
+  }, []);
 
   const currentVeg = vegetables[vegIndex];
   const currentFruit = fruits[fruitIndex];
@@ -430,6 +454,13 @@ export default function TeluguPage() {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "en-US";
+    u.rate = 0.9;
+    // Try to find an English voice
+    const voices = window.speechSynthesis.getVoices();
+    const englishVoice = voices.find(
+      (v) => v.lang.startsWith("en") && !v.lang.startsWith("en-IN"),
+    );
+    if (englishVoice) u.voice = englishVoice;
     window.speechSynthesis.speak(u);
   };
 
@@ -438,6 +469,18 @@ export default function TeluguPage() {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "te-IN";
+    u.rate = 0.8;
+    // Try to find a Telugu voice first
+    const voices = window.speechSynthesis.getVoices();
+    const teluguVoice = voices.find((v) => v.lang.startsWith("te"));
+    if (teluguVoice) {
+      u.voice = teluguVoice;
+    } else {
+      // If no Telugu voice found, don't force any voice - let the browser
+      // handle the te-IN language tag with its default behavior
+      // This often produces better results than forcing an English voice
+      u.voice = null;
+    }
     window.speechSynthesis.speak(u);
   };
 
@@ -608,7 +651,7 @@ export default function TeluguPage() {
                 {/* Fun buttons */}
                 <div className="mt-6 flex justify-center gap-3 flex-wrap">
                   <button
-                    onClick={() => speak(currentVeg.phonetic)}
+                    onClick={() => speakTelugu(currentVeg.telugu)}
                     className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-3 rounded-2xl text-lg font-bold hover:from-indigo-600 hover:to-purple-600 transition transform hover:scale-110 shadow-lg"
                   >
                     🔊 వినండి
@@ -735,7 +778,7 @@ export default function TeluguPage() {
                 {/* Fun buttons */}
                 <div className="mt-6 flex justify-center gap-3 flex-wrap">
                   <button
-                    onClick={() => speak(currentFruit.phonetic)}
+                    onClick={() => speakTelugu(currentFruit.telugu)}
                     className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-3 rounded-2xl text-lg font-bold hover:from-indigo-600 hover:to-purple-600 transition transform hover:scale-110 shadow-lg"
                   >
                     🔊 వినండి

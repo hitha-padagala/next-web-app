@@ -822,7 +822,7 @@ export default function EnglishPage() {
                 className={`px-5 py-3 rounded-2xl border-4 text-lg font-bold transition transform hover:scale-110 ${
                   activeSection === key
                     ? `bg-gradient-to-br ${sectionConfig[key].color} text-white border-white shadow-lg`
-                    : "bg-white border-gray-200 hover:border-purple-300"
+                    : "bg-gray-100 border-gray-300 hover:border-purple-300 text-gray-800"
                 }`}
               >
                 <span className="text-2xl mr-2">
@@ -863,7 +863,7 @@ export default function EnglishPage() {
                 <h2 className="text-3xl font-bold text-green-700">
                   📝 Grammar Quiz
                 </h2>
-                <div className="bg-gradient-to-r from-yellow-300 to-amber-300 px-4 py-2 rounded-full font-bold text-lg">
+                <div className="bg-gradient-to-r from-yellow-300 to-amber-300 px-4 py-2 rounded-full font-bold text-lg text-yellow-900 shadow-md border-2 border-yellow-400">
                   ⭐ Score: {score}/{grammarQuestions.length}
                 </div>
               </div>
