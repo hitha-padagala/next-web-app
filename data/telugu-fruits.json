@@ -1,0 +1,144 @@
+{
+  "fruits": [
+    {
+      "telugu": "ఆపిల్",
+      "phonetic": "aaphil",
+      "english": "Apple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg",
+      "emoji": "🍎"
+    },
+    {
+      "telugu": "అరటిపండు",
+      "phonetic": "araTipaMDu",
+      "english": "Banana",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Bananas_white_background.jpg",
+      "emoji": "🍌"
+    },
+    {
+      "telugu": "మామిడిపండు",
+      "phonetic": "maamidiPaMDu",
+      "english": "Mango",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Mangoes.jpg",
+      "emoji": "🥭"
+    },
+    {
+      "telugu": "ద్రాక్షapండు",
+      "phonetic": "draakshaPaMDu",
+      "english": "Grapes",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Vitis_vinifera_Grapes_2.jpg",
+      "emoji": "🍇"
+    },
+    {
+      "telugu": "కమలాపండు",
+      "phonetic": "kamalaaPaMDu",
+      "english": "Orange",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/OrangeBloss_wb.jpg",
+      "emoji": "🍊"
+    },
+    {
+      "telugu": "బొప్పాయి",
+      "phonetic": "boppaayi",
+      "english": "Papaya",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Papaya_cross_section.jpg",
+      "emoji": "🍈"
+    },
+    {
+      "telugu": "పనసapండు",
+      "phonetic": "panasapaMDu",
+      "english": "Jackfruit",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Jackfruit.jpg",
+      "emoji": "🍈"
+    },
+    {
+      "telugu": "కర్బూజ",
+      "phonetic": "karbuuja",
+      "english": "Watermelon",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Watermelon.jpg",
+      "emoji": "🍉"
+    },
+    {
+      "telugu": "దానిమ్మapండు",
+      "phonetic": "daanimmaPaMDu",
+      "english": "Pomegranate",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Pomegranate03.jpg",
+      "emoji": "🍎"
+    },
+    {
+      "telugu": "జామapండు",
+      "phonetic": "jaamaPaMDu",
+      "english": "Guava",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Guava_cross_section.jpg",
+      "emoji": "🍐"
+    },
+    {
+      "telugu": "నిమ్మకాయ",
+      "phonetic": "nimmakaaya",
+      "english": "Lemon",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Lemon.jpg",
+      "emoji": "🍋"
+    },
+    {
+      "telugu": "చెర్రీapండు",
+      "phonetic": "cherreeepaMDu",
+      "english": "Cherry",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Cherry_Stella_edited.jpg",
+      "emoji": "🍒"
+    },
+    {
+      "telugu": "స్ట్రాబెర్రీ",
+      "phonetic": "straaberree",
+      "english": "Strawberry",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg",
+      "emoji": "🍓"
+    },
+    {
+      "telugu": "అనాసapండు",
+      "phonetic": "anaasapaMDu",
+      "english": "Pineapple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pineapple_and_cross_section.jpg",
+      "emoji": "🍍"
+    },
+    {
+      "telugu": "సapోట",
+      "phonetic": "sapoTa",
+      "english": "Sapota",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Manilkara_zapota_fruit.jpg",
+      "emoji": "🍈"
+    },
+    {
+      "telugu": "కీత్",
+      "phonetic": "keeth",
+      "english": "Kiwi",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Kiwi_%28Actinidia%29.jpg",
+      "emoji": "🥝"
+    },
+    {
+      "telugu": "పప్పయ",
+      "phonetic": "pappaya",
+      "english": "Papaya",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Papaya_fruit.jpg",
+      "emoji": "🍈"
+    },
+    {
+      "telugu": "ద్రాక్ష",
+      "phonetic": "draaksha",
+      "english": "Dates",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Dates.jpg",
+      "emoji": "🌴"
+    },
+    {
+      "telugu": "అరటి",
+      "phonetic": "araTi",
+      "english": "Chickoo",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Chickoo.jpg",
+      "emoji": "🍑"
+    },
+    {
+      "telugu": "సీద్",
+      "phonetic": "seed",
+      "english": "Figs",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Fig_fruit.jpg",
+      "emoji": "🍊"
+    }
+  ]
+}

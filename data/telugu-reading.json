@@ -1,0 +1,137 @@
+{
+  "readingLessons": [
+    {
+      "title": "అక్షరమాల (Alphabet)",
+      "telugu": "అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఌ ౡ ఎ ఏ ఐ ఒ ఓ ఔ అం అః",
+      "phonetic": "a aa i ee u oo ru ruu lu luu e ae ai o oo au am ah",
+      "english": "Vowels in Telugu",
+      "emoji": "🔤"
+    },
+    {
+      "title": "హల్లులు (Consonants)",
+      "telugu": "క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ల వ శ ష స హ ళ క్ష",
+      "phonetic": "ka kha ga gha nga cha chha ja jha nya ta tha da dha na pa pha ba bha ma ya ra la va sha sha sa ha la ksha",
+      "english": "Consonants in Telugu",
+      "emoji": "🔡"
+    },
+    {
+      "title": "సంఖ్యలు (Numbers)",
+      "telugu": "సున్న - ౦, ఒకటి - ౧, రెండు - ౨, మూడు - ౩, నాలుగు - ౪, ఐదు - ౫, ఆరు - ౬, ఏడు - ౭, ఎనిమిది - ౮, తొమ్మిది - ౯, పది - ౧౦",
+      "phonetic": "sunna - 0, okati - 1, rendu - 2, moodu - 3, naalugu - 4, aidu - 5, aaru - 6, edu - 7, enimidi - 8, tommidi - 9, padi - 10",
+      "english": "Numbers in Telugu",
+      "emoji": "🔢"
+    },
+    {
+      "title": "రంగులు (Colors)",
+      "telugu": "ఎరుపు - Red, నీలం - Blue, పచ్చ - Green, పసుపు - Yellow, తెలుపు - White, నలుపు - Black, ఊదా - Purple, గులాబీ - Pink",
+      "phonetic": "erupu - Red, neelam - Blue, pacha - Green, pasupu - Yellow, telupu - White, nalupu - Black, oodaa - Purple, gulaabee - Pink",
+      "english": "Colors in Telugu",
+      "emoji": "🌈"
+    },
+    {
+      "title": "రోజులు (Days of Week)",
+      "telugu": "ఆదివారం, సోమవారం, మంగళవారం, బుధవారం, గురువారం, శుక్రవారం, శనివారం",
+      "phonetic": "Aadivaaram, Somavaaram, Mangalavaaram, Budhavaaram, Guruvaram, Sukravaaram, Sanivaaram",
+      "english": "Days of the Week in Telugu",
+      "emoji": "📅"
+    },
+    {
+      "title": "నెలలు (Months)",
+      "telugu": "జనవరి, ఫిబ్రవరి, మార్చి, ఏప్రిల్, మే, జూన్, జూలై, ఆగస్టు, సెప్టెంబర్, అక్టోబర్, నవంబర్, డిసెంబర్",
+      "phonetic": "January, February, March, April, May, June, July, August, September, October, November, December",
+      "english": "Months in Telugu",
+      "emoji": "📆"
+    },
+    {
+      "title": "పండుగలు (Festivals)",
+      "telugu": "ఉగాది, దసరా, దీపావళి, సంక్రాంతి, విజయదశమి, వినాయక చవితి, రామనవమి",
+      "phonetic": "Ugaadi, Dasara, Deepaavali, Sankraanti, Vijayadashami, Vinaayaka Chavithi, Raamanavami",
+      "english": "Festivals in Telugu",
+      "emoji": "🎉"
+    },
+    {
+      "title": "కుటుంబ సభ్యులు (Family Members)",
+      "telugu": "నాన్న - Father, అమ్మ - Mother, అన్నయ్య - Elder Brother, అక్క - Elder Sister, తమ్ముడు - Younger Brother, చెల్లి - Younger Sister, తాత - Grandfather, అమ్మమ్మ - Grandmother (maternal), నానమ్మ - Grandmother (paternal)",
+      "phonetic": "Naanna - Father, Amma - Mother, Annayya - Elder Brother, Akka - Elder Sister, Tammudu - Younger Brother, Chelli - Younger Sister, Taatha - Grandfather, Ammamma - Grandmother (maternal), Naanamma - Grandmother (paternal)",
+      "english": "Family Members in Telugu",
+      "emoji": "👨‍👩‍👧‍👦"
+    },
+    {
+      "title": "సాధారణ వాక్యాలు (Common Sentences)",
+      "telugu": "నమస్కారం - Hello, ధన్యవాదాలు - Thank you, బాగున్నాను - I am fine, మీ పేరు ఏమిటి? - What is your name?, నా పేరు ... - My name is ..., దయచేసి - Please, క్షమించండి - Sorry",
+      "phonetic": "Namaskaaram - Hello, Dhanyavaadaalu - Thank you, Baagunnaanu - I am fine, Mee peru emiti? - What is your name?, Naa peru ... - My name is ..., Dayachesi - Please, Kshaminchandi - Sorry",
+      "english": "Common Sentences in Telugu",
+      "emoji": "💬"
+    },
+    {
+      "title": "జంతువులు (Animals)",
+      "telugu": "కుక్క - Dog, పిల్లి - Cat, ఆవు - Cow, ఎద్దు - Bull, గుర్రం - Horse, ఏనుగు - Elephant, పులి - Tiger, సింహం - Lion, ఎలుగుబంటి - Bear, కోతి - Monkey",
+      "phonetic": "Kukka - Dog, Pilli - Cat, Aavu - Cow, Eddu - Bull, Gurram - Horse, Enugu - Elephant, Puli - Tiger, Simham - Lion, Elugubanti - Bear, Kothi - Monkey",
+      "english": "Animals in Telugu",
+      "emoji": "🐾"
+    },
+    {
+      "title": "పక్షులు (Birds)",
+      "telugu": "కాకి - Crow, పావురం - Pigeon, చిలుక - Parrot, నెమలి - Peacock, కోడి - Hen, గుడ్లగూబ - Owl, గద్ద - Eagle, బుల్బుల్ - Bulbul",
+      "phonetic": "Kaaki - Crow, Paavuram - Pigeon, Chiluka - Parrot, Nemali - Peacock, Kodi - Hen, Gudlagooba - Owl, Gadda - Eagle, Bulbul - Bulbul",
+      "english": "Birds in Telugu",
+      "emoji": "🐦"
+    },
+    {
+      "title": "చిన్న కథ (Short Story)",
+      "telugu": "ఒక ఊరిలో ఒక రైతు ఉండేవాడు. అతనికి ముగ్గురు కొడుకులు. వారు ఎప్పుడూ కలిసి ఉండేవారు. రైతు వారికి మంచి బుద్ధి చెప్పాడు. కలిసి ఉంటే బలం అని చెప్పాడు.",
+      "phonetic": "Oka oorilo oka raitu undevaadu. Ataniki mugguru kodukulu. Vaaru eppuduu kalisi undevaaru. Raitu vaariki manchi buddhi cheppaadu. Kalisi unte balam ani cheppaadu.",
+      "english": "In a village, there lived a farmer. He had three sons. They always stayed together. The farmer taught them good values. He said unity is strength.",
+      "emoji": "📚"
+    },
+    {
+      "title": "పద్యం (Poem)",
+      "telugu": "అమ్మ అమ్మ అమ్మ అని పిలిచిన పలికేను\nఅందరికి అమ్మే ప్రాణం అని తెలిసేను\nఅమ్మ ఒడిలో అమృతం దొరుకును\nఅమ్మ ప్రేమలో ఆనందం దొరుకును",
+      "phonetic": "Amma amma amma ani pilichina palikenu\nAndariki amme praanam ani telisenu\nAmma odilo amrutam dorukunu\nAmma premalo aanandam dorukunu",
+      "english": "When I call Amma, she responds\nI learned that mother is life itself\nIn mother's lap, we find nectar\nIn mother's love, we find happiness",
+      "emoji": "🎵"
+    },
+    {
+      "title": "వంకాయలు (Gourds)",
+      "telugu": "ఉల్లిపాయ - Onion, వంకాయ - Brinjal, తొరలి - Ridge Gourd, బెండకాయ - Lady's Finger, పొట్లకాయ - Snake Gourd, దోసకాయ - Cucumber",
+      "phonetic": "Ullipaaya - Onion, Vankaaya - Brinjal, Thorali - Ridge Gourd, Bendakaaya - Lady's Finger, Potlakaaya - Snake Gourd, Dosakaaya - Cucumber",
+      "english": "Various Gourds and Vegetables",
+      "emoji": "🥒"
+    },
+    {
+      "title": "పూలు (Flowers)",
+      "telugu": "మల్లి - Jasmine, రోజ - Rose, హరిగణ - Marigold, పుష్ప - Lily, అశోక - Ashoka, జాస్మిన్ - Jasmine",
+      "phonetic": "Malli - Jasmine, Roja - Rose, HarigaNa - Marigold, Pushpa - Lily, Ashoka - Ashoka, Jasmine - Jasmine",
+      "english": "Flowers in Telugu",
+      "emoji": "🌼"
+    },
+    {
+      "title": "అడవులు (Trees)",
+      "telugu": "మామిడి - Mango Tree, నీరి - Tamarind, పీపల - Fig, మర్రి - Peepal, బోచు - Banyan, పల్లే - Ficus",
+      "phonetic": "Maamidi - Mango, Neeri - Tamarind, Peepal - Fig, Marri - Peepal, Bochu - Banyan, Palle - Ficus",
+      "english": "Trees in Telugu",
+      "emoji": "🌳"
+    },
+    {
+      "title": "వాహనాలు (Vehicles)",
+      "telugu": "బస - Bus, ఆటో - Car, బైక్ - Bike, రైలు - Train, గడIj - Airplane, పక్క - Ship",
+      "phonetic": "Bus - Bus, AaTo - Car, Bike - Bike, Railu - Train, Gadi - Airplane, Paka - Ship",
+      "english": "Vehicles in Telugu",
+      "emoji": "🚗"
+    },
+    {
+      "title": "భారతీయ పండుగలు (Indian Festivals)",
+      "telugu": "సంక్రాంతి - Sankranti, ఉగాది - Ugadi, దీపావళి - Diwali, దసరా - Dussehra, గణేశ్ చతుర్థి - Ganesh Chaturthi, శ్రీరామ నవమి - Srirama Navami",
+      "phonetic": "Sankraanti - Sankranti, Ugaadi - Ugadi, Deepaavali - Diwali, Dasara - Dussehra, GaNeSh Chaturthi - Ganesh Chaturthi, Shreeraama Navami - Srirama Navami",
+      "english": "Major Indian Festivals",
+      "emoji": "🪔"
+    },
+    {
+      "title": "ఆకు పొరలు (Body Parts)",
+      "telugu": "తజ - Head, కూచె - Hair, కన - Eye, చెవి - Ear, ముఖం - Face, నోరు - Nose, మundry - Lips",
+      "phonetic": "Tala - Head, Kucha - Hair, KaNu - Eye, Chevi - Ear, Mukham - Face, NooRu - Nose, Munda - Lips",
+      "english": "Body Parts in Telugu",
+      "emoji": "👤"
+    }
+  ]
+}

@@ -1,7 +1,39 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import vegetablesData from "@/data/telugu-vegetables.json";
+import fruitsData from "@/data/telugu-fruits.json";
+import readingLessonsData from "@/data/telugu-reading.json";
+
+type Section = "vegetables" | "fruits" | "reading";
+
+type VegetableItem = {
+  telugu: string;
+  phonetic: string;
+  english: string;
+  image: string;
+  emoji: string;
+};
+
+type FruitItem = {
+  telugu: string;
+  phonetic: string;
+  english: string;
+  image: string;
+  emoji: string;
+};
+
+type ReadingItem = {
+  title: string;
+  telugu: string;
+  phonetic: string;
+  english: string;
+  emoji: string;
+};
+
+const { vegetables } = vegetablesData;
+const { fruits } = fruitsData;
+const { readingLessons } = readingLessonsData;
 
 const getTeluguVoice = (voices: SpeechSynthesisVoice[]) => {
   return (
@@ -10,384 +42,6 @@ const getTeluguVoice = (voices: SpeechSynthesisVoice[]) => {
     null
   );
 };
-
-type Section = "vegetables" | "fruits" | "reading";
-
-interface VegetableItem {
-  telugu: string;
-  phonetic: string;
-  english: string;
-  image: string;
-  emoji: string;
-}
-
-interface FruitItem {
-  telugu: string;
-  phonetic: string;
-  english: string;
-  image: string;
-  emoji: string;
-}
-
-interface ReadingItem {
-  title: string;
-  telugu: string;
-  phonetic: string;
-  english: string;
-  emoji: string;
-}
-
-const vegetables: VegetableItem[] = [
-  {
-    telugu: "టమోటా",
-    phonetic: "tamoTa",
-    english: "Tomato",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/8/88/Bright_red_tomato_and_cross_section02.jpg",
-    emoji: "🍅",
-  },
-  {
-    telugu: "బంగాళాదుంప",
-    phonetic: "bangaladumpa",
-    english: "Potato",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/60/Patates.jpg",
-    emoji: "🥔",
-  },
-  {
-    telugu: "కారెట్",
-    phonetic: "kaarat",
-    english: "Carrot",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Carrots.jpg",
-    emoji: "🥕",
-  },
-  {
-    telugu: "వంకాయ",
-    phonetic: "vankaaya",
-    english: "Brinjal",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Eggplant.jpg",
-    emoji: "🍆",
-  },
-  {
-    telugu: "దోసకాయ",
-    phonetic: "dosakaaya",
-    english: "Cucumber",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/96/Cucumber.jpg",
-    emoji: "🥒",
-  },
-  {
-    telugu: "ఉల్లిపాయ",
-    phonetic: "ullipaaya",
-    english: "Onion",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/25/Onion.jpg",
-    emoji: "🧅",
-  },
-  {
-    telugu: "పచ్చిమిరప",
-    phonetic: "pachimirapa",
-    english: "Green Chilli",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/c/c4/Green_chili_pepper.jpg",
-    emoji: "🌶️",
-  },
-  {
-    telugu: "బెండకాయ",
-    phonetic: "bendakaaya",
-    english: "Lady's Finger",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Okra_pod.jpg",
-    emoji: "🥬",
-  },
-  {
-    telugu: "కాలీఫ్లవర్",
-    phonetic: "kaaleephlaavar",
-    english: "Cauliflower",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/25/Cauliflower.jpg",
-    emoji: "🥦",
-  },
-  {
-    telugu: "మునగాకు",
-    phonetic: "munagaaku",
-    english: "Drumstick Leaves",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Moringa_oleifera_leaves.jpg",
-    emoji: "🌿",
-  },
-  {
-    telugu: "చిలగడదుంప",
-    phonetic: "chilagadadumpa",
-    english: "Sweet Potato",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/30/Sweet_potato.jpg",
-    emoji: "🍠",
-  },
-  {
-    telugu: "బీట్‌రూట్",
-    phonetic: "beetrooT",
-    english: "Beetroot",
-    image: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Beetroot.jpg",
-    emoji: "🟣",
-  },
-  {
-    telugu: "ముల్లంగి",
-    phonetic: "mullangi",
-    english: "Radish",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Radish_33711.jpg",
-    emoji: "⚪",
-  },
-  {
-    telugu: "క్యాబేజీ",
-    phonetic: "kyaaabeejee",
-    english: "Cabbage",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/54/Cabbage_and_cross_section_on_white_background.jpg",
-    emoji: "🥬",
-  },
-  {
-    telugu: "పొట్లకాయ",
-    phonetic: "potlakaaya",
-    english: "Snake Gourd",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Trichosanthes_cucumerina_fruit.jpg",
-    emoji: "🥒",
-  },
-];
-
-const fruits: FruitItem[] = [
-  {
-    telugu: "ఆపిల్",
-    phonetic: "aaphil",
-    english: "Apple",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg",
-    emoji: "🍎",
-  },
-  {
-    telugu: "అరటిపండు",
-    phonetic: "araTipaMDu",
-    english: "Banana",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/4/44/Bananas_white_background.jpg",
-    emoji: "🍌",
-  },
-  {
-    telugu: "మామిడిపండు",
-    phonetic: "maamidiPaMDu",
-    english: "Mango",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Mangoes.jpg",
-    emoji: "🥭",
-  },
-  {
-    telugu: "ద్రాక్షపండు",
-    phonetic: "draakshaPaMDu",
-    english: "Grapes",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/b/b3/Vitis_vinifera_Grapes_2.jpg",
-    emoji: "🍇",
-  },
-  {
-    telugu: "కమలాపండు",
-    phonetic: "kamalaaPaMDu",
-    english: "Orange",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6a/OrangeBloss_wb.jpg",
-    emoji: "🍊",
-  },
-  {
-    telugu: "బొప్పాయి",
-    phonetic: "boppaayi",
-    english: "Papaya",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/c/cb/Papaya_cross_section.jpg",
-    emoji: "🍈",
-  },
-  {
-    telugu: "పనసపండు",
-    phonetic: "panasapaMDu",
-    english: "Jackfruit",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Jackfruit.jpg",
-    emoji: "🍈",
-  },
-  {
-    telugu: "కర్బూజ",
-    phonetic: "karbuuja",
-    english: "Watermelon",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Watermelon.jpg",
-    emoji: "🍉",
-  },
-  {
-    telugu: "దానిమ్మపండు",
-    phonetic: "daanimmaPaMDu",
-    english: "Pomegranate",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/4/47/Pomegranate03.jpg",
-    emoji: "🍎",
-  },
-  {
-    telugu: "జామపండు",
-    phonetic: "jaamaPaMDu",
-    english: "Guava",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/6/65/Guava_cross_section.jpg",
-    emoji: "🍐",
-  },
-  {
-    telugu: "నిమ్మకాయ",
-    phonetic: "nimmakaaya",
-    english: "Lemon",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Lemon.jpg",
-    emoji: "🍋",
-  },
-  {
-    telugu: "చెర్రీపండు",
-    phonetic: "cherreeepaMDu",
-    english: "Cherry",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/b/bb/Cherry_Stella_edited.jpg",
-    emoji: "🍒",
-  },
-  {
-    telugu: "స్ట్రాబెర్రీ",
-    phonetic: "straaberree",
-    english: "Strawberry",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg",
-    emoji: "🍓",
-  },
-  {
-    telugu: "అనాసపండు",
-    phonetic: "anaasapaMDu",
-    english: "Pineapple",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pineapple_and_cross_section.jpg",
-    emoji: "🍍",
-  },
-  {
-    telugu: "సపోట",
-    phonetic: "sapoTa",
-    english: "Sapota",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/53/Manilkara_zapota_fruit.jpg",
-    emoji: "🥝",
-  },
-];
-
-const readingLessons: ReadingItem[] = [
-  {
-    title: "అక్షరమాల (Alphabet)",
-    telugu: "అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఌ ౡ ఎ ఏ ఐ ఒ ఓ ఔ అం అః",
-    phonetic: "a aa i ee u oo ru ruu lu luu e ae ai o oo au am ah",
-    english: "Vowels in Telugu",
-    emoji: "🔤",
-  },
-  {
-    title: "హల్లులు (Consonants)",
-    telugu:
-      "క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ల వ శ ష స హ ళ క్ష",
-    phonetic:
-      "ka kha ga gha nga cha chha ja jha nya ta tha da dha na pa pha ba bha ma ya ra la va sha sha sa ha la ksha",
-    english: "Consonants in Telugu",
-    emoji: "🔡",
-  },
-  {
-    title: "సంఖ్యలు (Numbers)",
-    telugu:
-      "సున్న - ౦, ఒకటి - ౧, రెండు - ౨, మూడు - ౩, నాలుగు - ౪, ఐదు - ౫, ఆరు - ౬, ఏడు - ౭, ఎనిమిది - ౮, తొమ్మిది - ౯, పది - ౧౦",
-    phonetic:
-      "sunna - 0, okati - 1, rendu - 2, moodu - 3, naalugu - 4, aidu - 5, aaru - 6, edu - 7, enimidi - 8, tommidi - 9, padi - 10",
-    english: "Numbers in Telugu",
-    emoji: "🔢",
-  },
-  {
-    title: "రంగులు (Colors)",
-    telugu:
-      "ఎరుపు - Red, నీలం - Blue, పచ్చ - Green, పసుపు - Yellow, తెలుపు - White, నలుపు - Black, ఊదా - Purple, గులాబీ - Pink",
-    phonetic:
-      "erupu - Red, neelam - Blue, pacha - Green, pasupu - Yellow, telupu - White, nalupu - Black, oodaa - Purple, gulaabee - Pink",
-    english: "Colors in Telugu",
-    emoji: "🌈",
-  },
-  {
-    title: "రోజులు (Days of Week)",
-    telugu: "ఆదివారం, సోమవారం, మంగళవారం, బుధవారం, గురువారం, శుక్రవారం, శనివారం",
-    phonetic:
-      "Aadivaaram, Somavaaram, Mangalavaaram, Budhavaaram, Guruvaram, Sukravaaram, Sanivaaram",
-    english: "Days of the Week in Telugu",
-    emoji: "📅",
-  },
-  {
-    title: "నెలలు (Months)",
-    telugu:
-      "జనవరి, ఫిబ్రవరి, మార్చి, ఏప్రిల్, మే, జూన్, జూలై, ఆగస్టు, సెప్టెంబర్, అక్టోబర్, నవంబర్, డిసెంబర్",
-    phonetic:
-      "January, February, March, April, May, June, July, August, September, October, November, December",
-    english: "Months in Telugu",
-    emoji: "📆",
-  },
-  {
-    title: "పండుగలు (Festivals)",
-    telugu: "ఉగాది, దసరా, దీపావళి, సంక్రాంతి, విజయదశమి, వినాయక చవితి, రామనవమి",
-    phonetic:
-      "Ugaadi, Dasara, Deepaavali, Sankraanti, Vijayadashami, Vinaayaka Chavithi, Raamanavami",
-    english: "Festivals in Telugu",
-    emoji: "🎉",
-  },
-  {
-    title: "కుటుంబ సభ్యులు (Family Members)",
-    telugu:
-      "నాన్న - Father, అమ్మ - Mother, అన్నయ్య - Elder Brother, అక్క - Elder Sister, తమ్ముడు - Younger Brother, చెల్లి - Younger Sister, తాత - Grandfather, అమ్మమ్మ - Grandmother (maternal), నానమ్మ - Grandmother (paternal)",
-    phonetic:
-      "Naanna - Father, Amma - Mother, Annayya - Elder Brother, Akka - Elder Sister, Tammudu - Younger Brother, Chelli - Younger Sister, Taatha - Grandfather, Ammamma - Grandmother (maternal), Naanamma - Grandmother (paternal)",
-    english: "Family Members in Telugu",
-    emoji: "👨‍👩‍👧‍👦",
-  },
-  {
-    title: "సాధారణ వాక్యాలు (Common Sentences)",
-    telugu:
-      "నమస్కారం - Hello, ధన్యవాదాలు - Thank you, బాగున్నాను - I am fine, మీ పేరు ఏమిటి? - What is your name?, నా పేరు ... - My name is ..., దయచేసి - Please, క్షమించండి - Sorry",
-    phonetic:
-      "Namaskaaram - Hello, Dhanyavaadaalu - Thank you, Baagunnaanu - I am fine, Mee peru emiti? - What is your name?, Naa peru ... - My name is ..., Dayachesi - Please, Kshaminchandi - Sorry",
-    english: "Common Sentences in Telugu",
-    emoji: "💬",
-  },
-  {
-    title: "జంతువులు (Animals)",
-    telugu:
-      "కుక్క - Dog, పిల్లి - Cat, ఆవు - Cow, ఎద్దు - Bull, గుర్రం - Horse, ఏనుగు - Elephant, పులి - Tiger, సింహం - Lion, ఎలుగుబంటి - Bear, కోతి - Monkey",
-    phonetic:
-      "Kukka - Dog, Pilli - Cat, Aavu - Cow, Eddu - Bull, Gurram - Horse, Enugu - Elephant, Puli - Tiger, Simham - Lion, Elugubanti - Bear, Kothi - Monkey",
-    english: "Animals in Telugu",
-    emoji: "🐾",
-  },
-  {
-    title: "పక్షులు (Birds)",
-    telugu:
-      "కాకి - Crow, పావురం - Pigeon, చిలుక - Parrot, నెమలి - Peacock, కోడి - Hen, గుడ్లగూబ - Owl, గద్ద - Eagle, బుల్బుల్ - Bulbul",
-    phonetic:
-      "Kaaki - Crow, Paavuram - Pigeon, Chiluka - Parrot, Nemali - Peacock, Kodi - Hen, Gudlagooba - Owl, Gadda - Eagle, Bulbul - Bulbul",
-    english: "Birds in Telugu",
-    emoji: "🐦",
-  },
-  {
-    title: "చిన్న కథ (Short Story)",
-    telugu:
-      "ఒక ఊరిలో ఒక రైతు ఉండేవాడు. అతనికి ముగ్గురు కొడుకులు. వారు ఎప్పుడూ కలిసి ఉండేవారు. రైతు వారికి మంచి బుద్ధి చెప్పాడు. కలిసి ఉంటే బలం అని చెప్పాడు.",
-    phonetic:
-      "Oka oorilo oka raitu undevaadu. Ataniki mugguru kodukulu. Vaaru eppuduu kalisi undevaaru. Raitu vaariki manchi buddhi cheppaadu. Kalisi unte balam ani cheppaadu.",
-    english:
-      "In a village, there lived a farmer. He had three sons. They always stayed together. The farmer taught them good values. He said unity is strength.",
-    emoji: "📚",
-  },
-  {
-    title: "పద్యం (Poem)",
-    telugu:
-      "అమ్మ అమ్మ అమ్మ అని పిలిచిన పలికేను\nఅందరికి అమ్మే ప్రాణం అని తెలిసేను\nఅమ్మ ఒడిలో అమృతం దొరుకును\nఅమ్మ ప్రేమలో ఆనందం దొరుకును",
-    phonetic:
-      "Amma amma amma ani pilichina palikenu\nAndariki amme praanam ani telisenu\nAmma odilo amrutam dorukunu\nAmma premalo aanandam dorukunu",
-    english:
-      "When I call Amma, she responds\nI learned that mother is life itself\nIn mother's lap, we find nectar\nIn mother's love, we find happiness",
-    emoji: "🎵",
-  },
-];
 
 const sectionConfig: Record<
   Section,
@@ -643,7 +297,7 @@ export default function TeluguPage() {
                 {/* Image with fun border */}
                 <div className="relative inline-block">
                   <div className="absolute inset-0 bg-gradient-to-r from-green-300 to-emerald-300 rounded-2xl transform rotate-3"></div>
-                  <Image
+                  <img
                     src={currentVeg.image}
                     alt={currentVeg.telugu}
                     width={224}
@@ -769,7 +423,7 @@ export default function TeluguPage() {
                 {/* Image with fun border */}
                 <div className="relative inline-block">
                   <div className="absolute inset-0 bg-gradient-to-r from-red-300 to-pink-300 rounded-2xl transform rotate-3"></div>
-                  <Image
+                  <img
                     src={currentFruit.image}
                     alt={currentFruit.telugu}
                     width={224}

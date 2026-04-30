@@ -1,0 +1,312 @@
+{
+  "grammarQuestions": [
+    {
+      "question": "The cat is ___ on the mat",
+      "options": ["sit", "sitting", "sits"],
+      "answer": "sitting",
+      "explanation": "We use 'sitting' because the action is happening now (present continuous tense)",
+      "emoji": "🐱"
+    },
+    {
+      "question": "She ___ to school every day",
+      "options": ["go", "goes", "going"],
+      "answer": "goes",
+      "explanation": "We use 'goes' with he/she/it in simple present tense",
+      "emoji": "🏫"
+    },
+    {
+      "question": "They are ___ cricket in the park",
+      "options": ["play", "playing", "plays"],
+      "answer": "playing",
+      "explanation": "We use 'playing' after 'are' (present continuous tense)",
+      "emoji": "🏏"
+    },
+    {
+      "question": "I ___ a mango every morning",
+      "options": ["eat", "eats", "eating"],
+      "answer": "eat",
+      "explanation": "We use 'eat' with I/we/you/they in simple present tense",
+      "emoji": "🥭"
+    },
+    {
+      "question": "The sun ___ in the east",
+      "options": ["rise", "rises", "rising"],
+      "answer": "rises",
+      "explanation": "We use 'rises' because the sun is singular (it)",
+      "emoji": "🌅"
+    },
+    {
+      "question": "We ___ to the market yesterday",
+      "options": ["go", "went", "gone"],
+      "answer": "went",
+      "explanation": "We use 'went' for past tense of 'go'",
+      "emoji": "🛒"
+    },
+    {
+      "question": "The birds ___ in the sky",
+      "options": ["fly", "flies", "flying"],
+      "answer": "fly",
+      "explanation": "We use 'fly' with plural subjects like 'birds'",
+      "emoji": "🐦"
+    },
+    {
+      "question": "He ___ a beautiful picture",
+      "options": ["draw", "drew", "drawn"],
+      "answer": "drew",
+      "explanation": "We use 'drew' for past tense of 'draw'",
+      "emoji": "🎨"
+    },
+    {
+      "question": "The dog ___ very loudly",
+      "options": ["bark", "barks", "barking"],
+      "answer": "barks",
+      "explanation": "We use 'barks' with he/she/it (the dog is singular)",
+      "emoji": "🐕"
+    },
+    {
+      "question": "I have ___ my homework",
+      "options": ["finish", "finished", "finishing"],
+      "answer": "finished",
+      "explanation": "We use 'finished' after 'have' (present perfect tense)",
+      "emoji": "📝"
+    },
+    {
+      "question": "The moon ___ at night",
+      "options": ["shine", "shines", "shining"],
+      "answer": "shines",
+      "explanation": "We use 'shines' because the moon is singular (it)",
+      "emoji": "🌙"
+    },
+    {
+      "question": "She ___ a song beautifully",
+      "options": ["sing", "sings", "singing"],
+      "answer": "sings",
+      "explanation": "We use 'sings' with he/she/it in simple present tense",
+      "emoji": "🎵"
+    },
+    {
+      "question": "The children ___ in the garden",
+      "options": ["play", "plays", "playing"],
+      "answer": "play",
+      "explanation": "We use 'play' with plural subjects like 'children'",
+      "emoji": "🌺"
+    },
+    {
+      "question": "He ___ to music every evening",
+      "options": ["listen", "listens", "listening"],
+      "answer": "listens",
+      "explanation": "We use 'listens' with he/she/it in simple present tense",
+      "emoji": "🎧"
+    },
+    {
+      "question": "The fish ___ in the water",
+      "options": ["swim", "swims", "swimming"],
+      "answer": "swim",
+      "explanation": "We use 'swim' with plural or collective subjects",
+      "emoji": "🐟"
+    },
+    {
+      "question": "She ___ her teeth every morning",
+      "options": ["brush", "brushes", "brushing"],
+      "answer": "brushes",
+      "explanation": "We use 'brushes' with she in simple present tense",
+      "emoji": "🦷"
+    },
+    {
+      "question": "The train ___ at 9 o'clock",
+      "options": ["arrive", "arrives", "arriving"],
+      "answer": "arrives",
+      "explanation": "We use 'arrives' for scheduled events (timetable)",
+      "emoji": "🚂"
+    },
+    {
+      "question": "They ___ playing cricket now",
+      "options": ["is", "am", "are"],
+      "answer": "are",
+      "explanation": "We use 'are' with plural subjects like 'they'",
+      "emoji": "⚽"
+    },
+    {
+      "question": "My brother ___ a doctor",
+      "options": ["is", "am", "are"],
+      "answer": "is",
+      "explanation": "We use 'is' with singular subjects like 'he', 'she', 'it'",
+      "emoji": "👨‍⚕️"
+    },
+    {
+      "question": "I ___ eating lunch",
+      "options": ["am", "is", "are"],
+      "answer": "am",
+      "explanation": "We use 'am' with the subject 'I' in present continuous",
+      "emoji": "🍽️"
+    },
+    {
+      "question": "She ___ to the park yesterday",
+      "options": ["go", "goes", "went"],
+      "answer": "went",
+      "explanation": "We use 'went' for past tense of 'go'",
+      "emoji": "🏞️"
+    },
+    {
+      "question": "We ___ watching a movie",
+      "options": ["is", "am", "are"],
+      "answer": "are",
+      "explanation": "We use 'are' with 'we' in present continuous",
+      "emoji": "🎬"
+    },
+    {
+      "question": "He ___ his homework every day",
+      "options": ["do", "does", "doing"],
+      "answer": "does",
+      "explanation": "We use 'does' with he/she/it in simple present",
+      "emoji": "📚"
+    },
+    {
+      "question": "The birds ___ beautifully in the morning",
+      "options": ["sing", "sings", "singing"],
+      "answer": "sing",
+      "explanation": "We use 'sing' with plural subjects like 'birds'",
+      "emoji": "🐦"
+    },
+    {
+      "question": "I ___ a story last night",
+      "options": ["read", "reads", "reading"],
+      "answer": "read",
+      "explanation": "We use 'read' (past tense pronounced 'red') for completed past actions",
+      "emoji": "📖"
+    },
+    {
+      "question": "The baby ___ sleeping peacefully",
+      "options": ["is", "am", "are"],
+      "answer": "is",
+      "explanation": "We use 'is' for singular subjects like 'baby'",
+      "emoji": "👶"
+    },
+    {
+      "question": "They ___ arrived yet",
+      "options": ["have", "has", "having"],
+      "answer": "have",
+      "explanation": "We use 'have' with 'they' in present perfect tense",
+      "emoji": "🏠"
+    },
+    {
+      "question": "She ___ already finished her work",
+      "options": ["has", "have", "having"],
+      "answer": "has",
+      "explanation": "We use 'has' with she/he/it in present perfect",
+      "emoji": "✅"
+    },
+    {
+      "question": "We ___ eaten dinner",
+      "options": ["have", "has", "had"],
+      "answer": "have",
+      "explanation": "We use 'have' with we/they/I in present perfect",
+      "emoji": "🍲"
+    },
+    {
+      "question": "He ___ never seen a tiger",
+      "options": ["have", "has", "having"],
+      "answer": "has",
+      "explanation": "We use 'has' with he/she/it in present perfect",
+      "emoji": "🐯"
+    },
+    {
+      "question": "The teacher ___ a lesson",
+      "options": ["teach", "teaches", "teaching"],
+      "answer": "teaches",
+      "explanation": "We add 'es' when a verb ends in s, sh, ch, x, or z with he/she/it",
+      "emoji": "👩‍🏫"
+    },
+    {
+      "question": "My parents ___ hard every day",
+      "options": ["work", "works", "working"],
+      "answer": "work",
+      "explanation": "We use simple form for plural subjects like 'parents'",
+      "emoji": "👨‍👩‍👧"
+    },
+    {
+      "question": "The stars ___ at night",
+      "options": ["twinkle", "twinkles", "twinkling"],
+      "answer": "twinkle",
+      "explanation": "We use simple form for plural subjects like 'stars'",
+      "emoji": "⭐"
+    },
+    {
+      "question": "She ___ to music while studying",
+      "options": ["listen", "listens", "listening"],
+      "answer": "listens",
+      "explanation": "We use 'listens' with she in simple present",
+      "emoji": "🎧"
+    },
+    {
+      "question": "I ___ my keys on the table",
+      "options": ["leave", "leaves", "leaving"],
+      "answer": "leave",
+      "explanation": "We use simple form with 'I' in present tense",
+      "emoji": "🔑"
+    },
+    {
+      "question": "The leaves ___ falling in autumn",
+      "options": ["is", "am", "are"],
+      "answer": "are",
+      "explanation": "We use 'are' with plural subjects like 'leaves'",
+      "emoji": "🍂"
+    },
+    {
+      "question": "He ___ a famous singer",
+      "options": ["is", "am", "are"],
+      "answer": "is",
+      "explanation": "We use 'is' for singular subjects like 'he'",
+      "emoji": "🎤"
+    },
+    {
+      "question": "We ___ friends for years",
+      "options": ["have been", "has been", "having been"],
+      "answer": "have been",
+      "explanation": "We use 'have been' for ongoing actions from past to present",
+      "emoji": "🤝"
+    },
+    {
+      "question": "She ___ to the gym three times a week",
+      "options": ["go", "goes", "going"],
+      "answer": "goes",
+      "explanation": "We use 'goes' for regular habits with she/he/it",
+      "emoji": "🏋️‍♀️"
+    },
+    {
+      "question": "The cat ___ on the sofa",
+      "options": ["sleep", "sleeps", "sleeping"],
+      "answer": "sleeps",
+      "explanation": "We use 'sleeps' for regular actions with singular subjects",
+      "emoji": "😺"
+    },
+    {
+      "question": "I ___ seeing that movie!",
+      "options": ["am", "is", "are"],
+      "answer": "am",
+      "explanation": "We use 'am' with 'I' in present continuous for emphasis",
+      "emoji": "🎥"
+    },
+    {
+      "question": "They ___ to Paris next week",
+      "options": ["go", "goes", "are going"],
+      "answer": "are going",
+      "explanation": "We use 'are going' for near future plans with they/we",
+      "emoji": "✈️"
+    },
+    {
+      "question": "The sun ___ in the sky",
+      "options": ["is shining", "am shining", "are shining"],
+      "answer": "is shining",
+      "explanation": "We use 'is shining' for action happening now with singular subjects",
+      "emoji": "☀️"
+    },
+    {
+      "question": "We ___ a great time at the party",
+      "options": ["are having", "is having", "am having"],
+      "answer": "are having",
+      "explanation": "We use 'are having' for ongoing action with 'we'",
+      "emoji": "🎉"
+    }
+  ]
+}
