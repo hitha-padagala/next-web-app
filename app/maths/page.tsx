@@ -105,7 +105,8 @@ export default function MathsPage() {
   const [pressedKey, setPressedKey] = useState<string | null>(null);
 
   const resetQuiz = () => {
-    setQuestions(generateQuestions(category, 10));
+    const newQuestions = generateQuestions(category, 10);
+    setQuestions(newQuestions);
     setCurrentIndex(0);
     setScore(0);
     setAnswer("");
@@ -115,7 +116,10 @@ export default function MathsPage() {
 
   useEffect(() => {
     if (started && !finished) {
-      resetQuiz();
+      // Use a timeout to avoid cascading renders
+      setTimeout(() => {
+        resetQuiz();
+      }, 0);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category]);
